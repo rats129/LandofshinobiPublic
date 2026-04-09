@@ -1,3 +1,9 @@
 {
-  "item.landofshinobi.sapphire": "Sapphire"
+  "item.landofshinobi.sapphire": "Sapphire",
+  "item.landofshinobi.raw_sapphire": "Raw Sapphire",
+
+  "block.landofshinobi.sapphire_block": "Block of sapphire",
+  "block.landofshinobi.raw_sapphire_block": "Raw Block of sapphire",
+
+  "creativetab.land_of_shinobi_tab": "Land Of Shinobi"
 }

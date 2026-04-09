@@ -1,6 +1,8 @@
 package net.Rats.LandOfShinobi;
 
 import com.mojang.logging.LogUtils;
+import net.Rats.LandOfShinobi.block.ModBlocks;
+import net.Rats.LandOfShinobi.item.ModCreativeModeTabs;
 import net.Rats.LandOfShinobi.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTab;
@@ -29,7 +31,10 @@ public class landofshinobiMod {
     public landofshinobiMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus); //this is the creative mode custom tab code
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -47,6 +52,7 @@ public class landofshinobiMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.RAW_SAPPHIRE);
         }
     }
 
