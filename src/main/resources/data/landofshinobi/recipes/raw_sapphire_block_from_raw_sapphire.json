@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "landofshinobi:raw_sapphire"
+    }
+  },
+  "result": {
+    "item": "landofshinobi:raw_sapphire_block"
+  }
+}

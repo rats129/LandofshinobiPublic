@@ -1,9 +1,25 @@
 {
   "item.landofshinobi.sapphire": "Sapphire",
   "item.landofshinobi.raw_sapphire": "Raw Sapphire",
+  "item.landofshinobi.metal_detector": "Metal Detector",
 
   "block.landofshinobi.sapphire_block": "Block of sapphire",
   "block.landofshinobi.raw_sapphire_block": "Raw Block of sapphire",
 
-  "creativetab.land_of_shinobi_tab": "Land Of Shinobi"
+  "block.landofshinobi.sapphire_ore": "Sapphire Ore",
+  "block.landofshinobi.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.landofshinobi.end_stone_sapphire_ore": "Endstone Sapphire Ore",
+  "block.landofshinobi.nether_sapphire_ore": "Nether Sapphire Ore",
+
+  "block.landofshinobi.sound_block": "Sound Block",
+
+  "creativetab.land_of_shinobi_tab": "Land Of Shinobi",
+
+  "item.landofshinobi.strawberry": "Strawberry",
+  "item.landofshinobi.ramen": "Ramen",
+
+
+  "tooltip.landofshinobi.metal_detector.tooltip": "Finds Valuables Underground",
+
+  "item.landofshinobi.pine_cone": "Pine Cone"
 }
