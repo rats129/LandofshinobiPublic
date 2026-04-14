@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "landofshinobi:item/pom_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "landofshinobi:item/pom_2d"
+    },
+    "ground": {
+      "parent": "landofshinobi:item/pom_2d"
+    },
+    "fixed": {
+      "parent": "landofshinobi:item/pom_2d"
+    }
+  }
+}

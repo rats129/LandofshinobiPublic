@@ -6,15 +6,17 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import org.openjdk.nashorn.internal.ir.Block;
+import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks{
         public static final TagKey<Block> METAL_DETECTOR_VALUABLES = tag("metal_detector_valuables");
+        public static final TagKey<Block> NEEDS_SAPPHIRE_TOOL = tag("needs_sapphire_tool");
 
 
 
-        private static TagKey<Block> tag(String name) {
+
+        private static TagKey<net.minecraft.world.level.block.Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(landofshinobiMod.MODID, name));
         }
 

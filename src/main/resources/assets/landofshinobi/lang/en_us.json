@@ -2,14 +2,26 @@
   "item.landofshinobi.sapphire": "Sapphire",
   "item.landofshinobi.raw_sapphire": "Raw Sapphire",
   "item.landofshinobi.metal_detector": "Metal Detector",
+  "item.landofshinobi.pom": "Pom",
 
   "block.landofshinobi.sapphire_block": "Block of sapphire",
   "block.landofshinobi.raw_sapphire_block": "Raw Block of sapphire",
+  "block.landofshinobi.chakra_block": "Chakra Block",
 
   "block.landofshinobi.sapphire_ore": "Sapphire Ore",
   "block.landofshinobi.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
   "block.landofshinobi.end_stone_sapphire_ore": "Endstone Sapphire Ore",
   "block.landofshinobi.nether_sapphire_ore": "Nether Sapphire Ore",
+
+  "block.landofshinobi.sapphire_stairs": "Sapphire Stairs",
+  "block.landofshinobi.sapphire_slab": "Sapphire Slab",
+  "block.landofshinobi.sapphire_button": "Sapphire Button",
+  "block.landofshinobi.sapphire_pressure_plate": "Sapphire Pressure Plate",
+  "block.landofshinobi.sapphire_fence": "Sapphire Fence",
+  "block.landofshinobi.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.landofshinobi.sapphire_wall": "Sapphire Wall",
+  "block.landofshinobi.sapphire_door": "Sapphire Door",
+  "block.landofshinobi.sapphire_trapdoor": "Sapphire Trapdoor",
 
   "block.landofshinobi.sound_block": "Sound Block",
 
@@ -17,6 +29,14 @@
 
   "item.landofshinobi.strawberry": "Strawberry",
   "item.landofshinobi.ramen": "Ramen",
+
+  "item.landofshinobi.sapphire_sword": "Sapphire Sword",
+  "item.landofshinobi.sapphire_axe": "Sapphire Axe",
+  "item.landofshinobi.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.landofshinobi.sapphire_shovel": "Sapphire Shovel",
+  "item.landofshinobi.sapphire_hoe": "Sapphire Hoe",
+
+  "item.landofshinobi.kunai": "Kunai",
 
 
   "tooltip.landofshinobi.metal_detector.tooltip": "Finds Valuables Underground",
