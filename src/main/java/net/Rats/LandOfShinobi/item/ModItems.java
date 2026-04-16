@@ -1,5 +1,8 @@
 package net.Rats.LandOfShinobi.item;
 
+import net.Rats.LandOfShinobi.item.armor.AbstractArmorItem;
+import net.Rats.LandOfShinobi.item.armor.LeafHeadbandItem;
+import net.Rats.LandOfShinobi.item.armor.client.model.LeafHeadbandModel;
 import net.Rats.LandOfShinobi.item.custom.FuelItem;
 import net.Rats.LandOfShinobi.item.custom.MetalDetectorItem;
 import net.Rats.LandOfShinobi.landofshinobiMod;
@@ -8,6 +11,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.apache.http.config.Registry;
+
+import java.util.Map;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -45,6 +51,21 @@ public class ModItems {
             () -> new ShovelItem(ModToolTiers.SAPPHIRE, -2,-2,new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
             () -> new HoeItem(ModToolTiers.SAPPHIRE, -2,-2,new Item.Properties()));
+
+    public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
+            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET,new Item.Properties()));
+    public static final RegistryObject<Item> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE,new Item.Properties()));
+    public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings",
+            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS,new Item.Properties()));
+    public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
+            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS,new Item.Properties()));
+
+    static RegistryObject<LeafHeadbandItem> LEAF_HEADBAND = ITEMS.register("leaf_headband", LeafHeadbandItem::new);
+
+
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

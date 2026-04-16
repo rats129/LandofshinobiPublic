@@ -36,7 +36,14 @@
   "item.landofshinobi.sapphire_shovel": "Sapphire Shovel",
   "item.landofshinobi.sapphire_hoe": "Sapphire Hoe",
 
+  "item.landofshinobi.sapphire_helmet": "Sapphire Helmet",
+  "item.landofshinobi.sapphire_chestplate": "Sapphire Chestplate",
+  "item.landofshinobi.sapphire_leggings": "Sapphire Leggings",
+  "item.landofshinobi.sapphire_boots": "Sapphire Boots",
+
   "item.landofshinobi.kunai": "Kunai",
+
+  "item.landofshinobi.leaf_headband": "Leaf Headband",
 
 
   "tooltip.landofshinobi.metal_detector.tooltip": "Finds Valuables Underground",

@@ -4,14 +4,22 @@ import net.Rats.LandOfShinobi.block.ModBlocks;
 import net.Rats.LandOfShinobi.item.ModItems;
 import net.Rats.LandOfShinobi.landofshinobiMod;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.armortrim.TrimMaterial;
+import net.minecraft.world.item.armortrim.TrimMaterials;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.LinkedHashMap;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output,  ExistingFileHelper existingFileHelper) {
@@ -47,9 +55,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SAPPHIRE_SHOVEL);
         handheldItem(ModItems.SAPPHIRE_HOE);
 
+        simpleItem(ModItems.SAPPHIRE_HELMET);
+        simpleItem(ModItems.SAPPHIRE_CHESTPLATE);
+        simpleItem(ModItems.SAPPHIRE_LEGGINGS);
+        simpleItem(ModItems.SAPPHIRE_BOOTS);
+
 
 
     }
+
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
