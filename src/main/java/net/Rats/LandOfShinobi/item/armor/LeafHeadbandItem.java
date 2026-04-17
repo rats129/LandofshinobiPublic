@@ -11,11 +11,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import org.jetbrains.annotations.Nullable;
 
-public class LeafHeadbandItem extends AbstractArmorItem {
+public class LeafHeadbandItem extends AbstractArmorItem  {
     private static final String TEXTURE_LOCATION = makeCustomTextureLocation(landofshinobiMod.MODID, "leaf_headband");
 
     public LeafHeadbandItem() {
-        super(ArmorMaterials.LEATHER,Type.HELMET, new Properties().rarity(Rarity.RARE));
+        super(ArmorMaterials.LEATHER, Type.HELMET, new Properties().rarity(Rarity.EPIC));
     }
 
     @Override

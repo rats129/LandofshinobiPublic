@@ -2,6 +2,7 @@ package net.Rats.LandOfShinobi.datagen;
 
 import net.Rats.LandOfShinobi.block.ModBlocks;
 import net.Rats.LandOfShinobi.item.ModItems;
+import net.Rats.LandOfShinobi.item.armor.LeafHeadbandItem;
 import net.Rats.LandOfShinobi.landofshinobiMod;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
@@ -59,6 +60,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SAPPHIRE_CHESTPLATE);
         simpleItem(ModItems.SAPPHIRE_LEGGINGS);
         simpleItem(ModItems.SAPPHIRE_BOOTS);
+
 
 
 

@@ -1,8 +1,6 @@
 package net.Rats.LandOfShinobi.item;
 
-import net.Rats.LandOfShinobi.item.armor.AbstractArmorItem;
 import net.Rats.LandOfShinobi.item.armor.LeafHeadbandItem;
-import net.Rats.LandOfShinobi.item.armor.client.model.LeafHeadbandModel;
 import net.Rats.LandOfShinobi.item.custom.FuelItem;
 import net.Rats.LandOfShinobi.item.custom.MetalDetectorItem;
 import net.Rats.LandOfShinobi.landofshinobiMod;
@@ -11,9 +9,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.apache.http.config.Registry;
-
-import java.util.Map;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -37,6 +32,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> KUNAI = ITEMS.register("kunai",
             () -> new SwordItem(Tiers.IRON ,2, 1,new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> ANBU_SWORD = ITEMS.register("anbu_sword",
+            () -> new SwordItem(Tiers.IRON ,3, 2,new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
             () -> new FuelItem(new Item.Properties(), 400));      //fuel item
@@ -62,6 +59,7 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS,new Item.Properties()));
 
     static RegistryObject<LeafHeadbandItem> LEAF_HEADBAND = ITEMS.register("leaf_headband", LeafHeadbandItem::new);
+
 
 
 

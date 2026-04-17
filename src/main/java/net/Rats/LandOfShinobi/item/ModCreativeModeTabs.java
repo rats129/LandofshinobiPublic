@@ -10,6 +10,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
+
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, landofshinobiMod.MODID);
@@ -45,6 +46,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SAPPHIRE_SHOVEL.get());
                         pOutput.accept(ModItems.SAPPHIRE_HOE.get());
                         pOutput.accept(ModItems.KUNAI.get());
+                        pOutput.accept(ModItems.ANBU_SWORD.get());
 
                         pOutput.accept(ModItems.SAPPHIRE_HELMET.get());
                         pOutput.accept(ModItems.SAPPHIRE_CHESTPLATE.get());

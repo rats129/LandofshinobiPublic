@@ -127,6 +127,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
 
+        //items
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.KUNAI.get(), 1)
+                .pattern(" U ")
+                .pattern(" S ")
+                .pattern(" # ")
+                .define('S', Items.IRON_INGOT)
+                .define('#', Items.STICK)
+                .define('U', Items.IRON_NUGGET)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(pWriter);
+
+
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
