@@ -1,6 +1,8 @@
 package net.Rats.LandOfShinobi.item;
 
 import net.Rats.LandOfShinobi.item.armor.LeafHeadbandItem;
+import net.Rats.LandOfShinobi.item.armor.LeafVestItem;
+import net.Rats.LandOfShinobi.item.armor.client.model.LeafVestModel;
 import net.Rats.LandOfShinobi.item.custom.FuelItem;
 import net.Rats.LandOfShinobi.item.custom.MetalDetectorItem;
 import net.Rats.LandOfShinobi.landofshinobiMod;
@@ -32,6 +34,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> KUNAI = ITEMS.register("kunai",
             () -> new SwordItem(Tiers.IRON ,2, 1,new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> ZABUZA_SWORD = ITEMS.register("zabuza_sword",
+            () -> new SwordItem(Tiers.IRON ,2, 1,new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> ANBU_SWORD = ITEMS.register("anbu_sword",
             () -> new SwordItem(Tiers.IRON ,3, 2,new Item.Properties().stacksTo(1)));
 
@@ -59,6 +63,7 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS,new Item.Properties()));
 
     static RegistryObject<LeafHeadbandItem> LEAF_HEADBAND = ITEMS.register("leaf_headband", LeafHeadbandItem::new);
+    static RegistryObject<LeafVestItem> LEAF_VEST = ITEMS.register("leaf_vest", LeafVestItem::new);
 
 
 

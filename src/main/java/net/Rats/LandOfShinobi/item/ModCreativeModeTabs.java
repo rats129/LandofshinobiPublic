@@ -47,6 +47,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SAPPHIRE_HOE.get());
                         pOutput.accept(ModItems.KUNAI.get());
                         pOutput.accept(ModItems.ANBU_SWORD.get());
+                        pOutput.accept(ModItems.ZABUZA_SWORD.get());
 
                         pOutput.accept(ModItems.SAPPHIRE_HELMET.get());
                         pOutput.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
@@ -66,6 +67,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
 
                         pOutput.accept(ModItems.LEAF_HEADBAND.get());
+                        pOutput.accept(ModItems.LEAF_VEST.get());
 
                     })
                     .build());
