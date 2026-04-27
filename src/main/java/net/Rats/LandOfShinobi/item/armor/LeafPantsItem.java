@@ -1,5 +1,6 @@
 package net.Rats.LandOfShinobi.item.armor;
 
+import net.Rats.LandOfShinobi.item.armor.client.model.LeafPantsModel;
 import net.Rats.LandOfShinobi.item.armor.client.model.LeafVestModel;
 import net.Rats.LandOfShinobi.item.armor.client.provider.ArmorModelProvider;
 import net.Rats.LandOfShinobi.item.armor.client.provider.SimpleModelProvider;
@@ -11,11 +12,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import org.jetbrains.annotations.Nullable;
 
-public class LeafVestItem extends AbstractArmorItem {
-    private static final String TEXTURE_LOCATION = makeCustomTextureLocation(landofshinobiMod.MODID, "leaf_vest");
+public class LeafPantsItem extends AbstractArmorItem {
+    private static final String TEXTURE_LOCATION = makeCustomTextureLocation(landofshinobiMod.MODID, "leaf_pants");
 
-    public LeafVestItem() {
-        super(ArmorMaterials.LEATHER, Type.CHESTPLATE, new Properties().rarity(Rarity.EPIC));
+    public LeafPantsItem() {
+        super(ArmorMaterials.LEATHER, Type.LEGGINGS, new Properties().rarity(Rarity.EPIC));
     }
 
     @Override
@@ -25,7 +26,7 @@ public class LeafVestItem extends AbstractArmorItem {
 
     @Override
     protected ArmorModelProvider createModelProvider() {
-        return new SimpleModelProvider(LeafVestModel::createBodyLayer, LeafVestModel::new);
+        return new SimpleModelProvider(LeafPantsModel::createBodyLayer, LeafPantsModel::new);
     }
 
     @Override

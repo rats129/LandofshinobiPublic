@@ -1,10 +1,12 @@
 package net.Rats.LandOfShinobi.item;
 
+import net.Rats.LandOfShinobi.item.armor.LeafBootsItem;
 import net.Rats.LandOfShinobi.item.armor.LeafHeadbandItem;
+import net.Rats.LandOfShinobi.item.armor.LeafPantsItem;
 import net.Rats.LandOfShinobi.item.armor.LeafVestItem;
-import net.Rats.LandOfShinobi.item.armor.client.model.LeafVestModel;
 import net.Rats.LandOfShinobi.item.custom.FuelItem;
 import net.Rats.LandOfShinobi.item.custom.MetalDetectorItem;
+import net.Rats.LandOfShinobi.item.custom.ModArmorItem;
 import net.Rats.LandOfShinobi.landofshinobiMod;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -54,7 +56,7 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.SAPPHIRE, -2,-2,new Item.Properties()));
 
     public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
-            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET,new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET,new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate",
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE,new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings",
@@ -64,6 +66,9 @@ public class ModItems {
 
     static RegistryObject<LeafHeadbandItem> LEAF_HEADBAND = ITEMS.register("leaf_headband", LeafHeadbandItem::new);
     static RegistryObject<LeafVestItem> LEAF_VEST = ITEMS.register("leaf_vest", LeafVestItem::new);
+    static RegistryObject<LeafPantsItem> LEAF_PANTS = ITEMS.register("leaf_pants", LeafPantsItem::new);
+    static RegistryObject<LeafBootsItem> LEAF_BOOTS = ITEMS.register("leaf_boots", LeafBootsItem::new);
+
 
 
 

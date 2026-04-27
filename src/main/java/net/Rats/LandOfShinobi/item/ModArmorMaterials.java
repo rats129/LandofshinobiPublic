@@ -1,5 +1,6 @@
 package net.Rats.LandOfShinobi.item;
 
+import net.Rats.LandOfShinobi.item.armor.LeafBootsItem;
 import net.Rats.LandOfShinobi.landofshinobiMod;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;

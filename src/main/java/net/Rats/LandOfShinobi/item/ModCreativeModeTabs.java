@@ -68,6 +68,8 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModItems.LEAF_HEADBAND.get());
                         pOutput.accept(ModItems.LEAF_VEST.get());
+                        pOutput.accept(ModItems.LEAF_PANTS.get());
+                        pOutput.accept(ModItems.LEAF_BOOTS.get());
 
                     })
                     .build());
