@@ -26,6 +26,8 @@
   "block.landofshinobi.sound_block": "Sound Block",
 
   "creativetab.land_of_shinobi_tab": "Land Of Shinobi",
+  "creativetab.land_of_shinobi_armor_tab": "Land Of Shinobi Armor",
+  "creativetab.land_of_shinobi_weapons_tab": "Land Of Shinobi Weapons",
 
   "item.landofshinobi.strawberry": "Strawberry",
   "item.landofshinobi.ramen": "Ramen",
@@ -49,6 +51,10 @@
   "item.landofshinobi.leaf_vest": "Leaf Vest",
   "item.landofshinobi.leaf_pants": "Leaf Pants",
   "item.landofshinobi.leaf_boots": "Leaf Boots",
+  "item.landofshinobi.mist_headband": "Mist Headband",
+  "item.landofshinobi.mist_vest": "Mist Vest",
+  "item.landofshinobi.mist_pants": "Mist Pants",
+  "item.landofshinobi.mist_boots": "Mist Boots",
 
 
   "tooltip.landofshinobi.metal_detector.tooltip": "Finds Valuables Underground",

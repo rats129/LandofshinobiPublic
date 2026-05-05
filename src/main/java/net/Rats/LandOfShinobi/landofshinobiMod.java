@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.Rats.LandOfShinobi.block.ModBlocks;
 import net.Rats.LandOfShinobi.item.ModCreativeModeTabs;
 import net.Rats.LandOfShinobi.item.ModItems;
+import net.Rats.LandOfShinobi.loot.ModLootModifiers;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -35,6 +36,8 @@ public class landofshinobiMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

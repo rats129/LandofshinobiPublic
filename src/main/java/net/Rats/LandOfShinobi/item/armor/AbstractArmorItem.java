@@ -5,6 +5,7 @@ import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import net.Rats.LandOfShinobi.item.armor.client.model.ArmorModel;
 import net.Rats.LandOfShinobi.item.armor.client.provider.ArmorModelProvider;
+import net.Rats.LandOfShinobi.item.custom.ModArmorItem;
 import net.minecraft.Util;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.Model;
@@ -28,7 +29,7 @@ import java.util.function.Function;
  * basic armor item.
  * <br>for custom model implementation (override {@link #withCustomModel()} and {@link #createModelProvider()} to enable
  */
-public abstract class AbstractArmorItem extends ArmorItem {
+public abstract class AbstractArmorItem extends ModArmorItem {
 
     public AbstractArmorItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
         super(pMaterial, pType, pProperties);

@@ -1,9 +1,6 @@
 package net.Rats.LandOfShinobi.item;
 
-import net.Rats.LandOfShinobi.item.armor.LeafBootsItem;
-import net.Rats.LandOfShinobi.item.armor.LeafHeadbandItem;
-import net.Rats.LandOfShinobi.item.armor.LeafPantsItem;
-import net.Rats.LandOfShinobi.item.armor.LeafVestItem;
+import net.Rats.LandOfShinobi.item.armor.*;
 import net.Rats.LandOfShinobi.item.custom.FuelItem;
 import net.Rats.LandOfShinobi.item.custom.MetalDetectorItem;
 import net.Rats.LandOfShinobi.item.custom.ModArmorItem;
@@ -64,10 +61,14 @@ public class ModItems {
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS,new Item.Properties()));
 
-    static RegistryObject<LeafHeadbandItem> LEAF_HEADBAND = ITEMS.register("leaf_headband", LeafHeadbandItem::new);
-    static RegistryObject<LeafVestItem> LEAF_VEST = ITEMS.register("leaf_vest", LeafVestItem::new);
-    static RegistryObject<LeafPantsItem> LEAF_PANTS = ITEMS.register("leaf_pants", LeafPantsItem::new);
-    static RegistryObject<LeafBootsItem> LEAF_BOOTS = ITEMS.register("leaf_boots", LeafBootsItem::new);
+    public static RegistryObject<LeafHeadbandItem> LEAF_HEADBAND = ITEMS.register("leaf_headband", LeafHeadbandItem::new);
+    public static RegistryObject<LeafVestItem> LEAF_VEST = ITEMS.register("leaf_vest", LeafVestItem::new);
+    public static RegistryObject<LeafPantsItem> LEAF_PANTS = ITEMS.register("leaf_pants", LeafPantsItem::new);
+    public static RegistryObject<LeafBootsItem> LEAF_BOOTS = ITEMS.register("leaf_boots", LeafBootsItem::new);
+    public static RegistryObject<MistHeadbandItem> MIST_HEADBAND = ITEMS.register("mist_headband", MistHeadbandItem::new);
+    public static RegistryObject<MistVestItem> MIST_VEST = ITEMS.register("mist_vest", MistVestItem::new);
+    public static RegistryObject<MistPantsItem> MIST_PANTS = ITEMS.register("mist_pants", MistPantsItem::new);
+    public static RegistryObject<MistBootsItem> MIST_BOOTS = ITEMS.register("mist_boots", MistBootsItem::new);
 
 
 

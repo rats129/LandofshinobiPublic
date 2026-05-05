@@ -45,9 +45,6 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SAPPHIRE_AXE.get());
                         pOutput.accept(ModItems.SAPPHIRE_SHOVEL.get());
                         pOutput.accept(ModItems.SAPPHIRE_HOE.get());
-                        pOutput.accept(ModItems.KUNAI.get());
-                        pOutput.accept(ModItems.ANBU_SWORD.get());
-                        pOutput.accept(ModItems.ZABUZA_SWORD.get());
 
                         pOutput.accept(ModItems.SAPPHIRE_HELMET.get());
                         pOutput.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
@@ -66,10 +63,33 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SAPPHIRE_STAIRS.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
 
-                        pOutput.accept(ModItems.LEAF_HEADBAND.get());
+                    })
+                    .build());
+    public static final RegistryObject<CreativeModeTab> LAND_OF_SHINOBI_ARMOR_TAB = CREATIVE_MODE_TABS.register("land_of_shinobi_armor_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LEAF_HEADBAND.get()))
+                    .title(Component.translatable("creativetab.land_of_shinobi_armor_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+            pOutput.accept(ModItems.LEAF_HEADBAND.get());
                         pOutput.accept(ModItems.LEAF_VEST.get());
                         pOutput.accept(ModItems.LEAF_PANTS.get());
                         pOutput.accept(ModItems.LEAF_BOOTS.get());
+                        pOutput.accept(ModItems.MIST_HEADBAND.get());
+                        pOutput.accept(ModItems.MIST_VEST.get());
+                        pOutput.accept(ModItems.MIST_PANTS.get());
+                        pOutput.accept(ModItems.MIST_BOOTS.get());
+
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> LAND_OF_SHINOBI_WEAPONS_TAB = CREATIVE_MODE_TABS.register("land_of_shinobi_weapons_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.KUNAI.get()))
+                    .title(Component.translatable("creativetab.land_of_shinobi_weapons_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+
+                        pOutput.accept(ModItems.KUNAI.get());
+                        pOutput.accept(ModItems.ANBU_SWORD.get());
+                        pOutput.accept(ModItems.ZABUZA_SWORD.get());
 
                     })
                     .build());
